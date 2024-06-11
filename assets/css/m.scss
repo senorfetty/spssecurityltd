@@ -1,0 +1,85 @@
+.slider_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+  
+    .row {
+      align-items: center;
+    }
+  
+    .detail-box {
+      width: 100%;
+      margin: 0 auto;
+  
+      h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: $white;
+        font-weight: 600;
+  
+        span {
+          color: $primary2;
+        }
+      }
+  
+      p {
+        margin-top: 25px;
+      }
+  
+      .btn-box {
+        display: flex;
+        margin-top: 30px;
+  
+        a {
+          width: 180px;
+          text-align: center;
+          margin: 5px;
+        }
+  
+        .btn-1 {
+          @include hero_btn($white, $black, 10px, 35px);
+        }
+  
+        .btn-2 {
+          @include hero_btn($primary2, $white, 10px, 35px);
+        }
+      }
+    }
+  
+    .img-box {
+      display: flex;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    #carouselExampleIndicators {}
+  
+    .idicator_container {
+      position: relative;
+    }
+  
+    ol.carousel-indicators {
+      margin: 0;
+      bottom: -75px;
+      justify-content: flex-end;
+  
+      li {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        text-align: center;
+        background-color: $primary2;
+        opacity: 1;
+        border: none;
+        margin: 0 4px;
+  
+        &.active {
+          background-color: $white
+        }
+      }
+    }
+  }
